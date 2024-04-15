@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "python-template"
+version = "0.1.0"
+description = "Template for python projects"
+authors = ["Daniel Dunn <dannydunn@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+beartype = "^0.18.2"
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+
+[tool.poetry.group.test]
+optional = true
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
